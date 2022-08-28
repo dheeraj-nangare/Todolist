@@ -41,7 +41,7 @@ const TaskManager=()=>{
     }
     const changeCompletion=(e,taskid)=>{
         e.preventDefault()
-        axios.get(`/changecompletion/${taskid}`).then((res)=>setStalker(true)).catch((e)=>console.log(e))
+        axios.get(`/${taskid}`).then((res)=>setStalker(true)).catch((e)=>console.log(e))
     }
     return(
         <div>
